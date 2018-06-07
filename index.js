@@ -1,4 +1,4 @@
-console.log('Hello world!')
+//console.log('Hello world!')
 var clickEvent = function()
 {
     var name = window.prompt("Please tell me your name!", "Person")
@@ -14,7 +14,8 @@ var clickEvent = function()
 };
 var htag = document.getElementById("hi");
 
-document.addEventListener("mousedown", clickEvent);
+//document.addEventListener("mousedown", clickEvent);
+document.addEventListener("keydown", keyEvent)
 
 
 var changeText = function()
@@ -22,5 +23,9 @@ var changeText = function()
     htag.innerText = arguments[0];
 }
 
+var keyEvent = function(e)
+{
+    console.log(e);
+}
 
 //console.log(htag);
